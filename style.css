@@ -1,0 +1,398 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif;
+}
+h1,h2,h3,h4,h5,h6,p{
+    padding: 0;
+    margin: 0;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.landing{
+    background: url("/img/landing.png") no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-bold{
+    font-weight: bolder;
+}
+.landing-inner{
+    text-align: center;
+}
+.highlighted{
+    font-size: 64px;
+    color: white;
+    margin-top: 10px;
+}
+
+.small-text{
+    font-size: 20px;
+    color: rgb(212, 212, 212);
+}
+
+.menu-link-btn{
+    border: 1px solid #facecd;
+    border-radius: 5px;
+    padding: 10px 20px;
+    align-self: flex-end;
+    color: #ecdbdb;
+    transition: 500ms
+}
+
+.menu-link-btn:hover{
+    background: #facecd;
+    color: #222;
+}
+
+.menu-link{
+    margin-top: 70px;
+}
+
+.food-slide{
+    padding:  100px 100px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+    grid-template-rows: 1fr;
+}
+
+.img-text{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 30px!important;
+    background-color: #ecdbdb;
+    border-radius: 10px;
+    width: 50%;
+    padding: 5px;
+    margin: auto;
+
+}
+
+.food-card{
+    width: 100%;
+    text-align: center;
+}
+
+.food-card img{
+    width: 100%;
+    height: 250px;
+    transition: 500ms;
+    border-radius: 5px;
+}
+
+.food-card img:hover{
+    filter: brightness(0.5);
+    cursor: pointer
+}
+
+.figure p{
+    display: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.below-food{
+    /* background:   */
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.below-food .main{
+    font-size: 38px;
+    color: #222;
+}
+
+.sub{
+    margin-top: 15px;
+}
+
+.text-muted{
+    color:#757575;
+    font-weight: 500;
+}
+
+.font-small{
+    font-size: 14px;
+    margin-left: 10px;
+    width: 90%;
+    padding-top: 5px;
+}
+.package-wrapper{
+    display: flex;
+    padding: 50px;
+    /* flex-wrap: wrap; */
+}
+
+@media screen and (max-width: 768px){
+    .package-wrapper{
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    .card{
+        width: 90%!important;
+    }
+    .food-slide{
+        grid-template-columns: 1fr;
+        padding: 20px;
+        grid-template-rows: 1fr;
+        align-items: center;
+        justify-items: center;
+        margin-bottom: 20px;
+
+    }
+
+    .main{
+        font-size: 25px!important;
+        text-align:center;
+    }
+    .logo-wrapper{
+        grid-template-columns: 1fr!important;
+        margin-top: 30px;
+    }
+    .logos{
+        margin-top: 20px!important;
+        padding: 10px!important;
+    }
+    .logos h2{
+        font-size: 30px!important;
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .packages{
+        height: 120vh;
+        /* margin-bottom: 30px; */
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 30px;
+
+    }
+}
+
+.card{
+    padding:10px 10px 0;
+    margin: 30px;
+    border: 1px solid #EAEAEA;
+    border-radius: 10px;
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.25);
+    /* background-color: #fff0f0; */
+    width: 60%;
+}
+
+.card-title{
+    padding: 20px 20px 15px;
+    border-bottom: 1px solid black;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.card-body{
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    border-bottom: 1px solid #EAEAEA; 
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.day{
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.space-betweem{
+    justify-content: space-between;
+}
+
+.card-footer{
+    padding: 0  20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-footer p{
+    font-size: 13px;
+    width: 100%;
+}
+
+.card-btn{
+    text-align: center;
+    font-size: 14px;
+    padding: 10px 20px;
+    
+    border-radius: 5px;
+    color: white
+}
+
+.one{
+    background-color: #f3a4b5;
+    transition: 500ms;
+}
+.one:hover{
+    background: white;
+    color: #f3a4b5;
+    border: 1px solid #f3a4b5;
+}
+.two{
+    background-color: #fb6340;
+    transition: 500ms
+}
+.two:hover{
+    background: white;
+    color: #2bffc6;
+    border: 1px solid #fb6340;
+}
+.three{
+    background-color: #5603ad;
+    transition: 500ms;
+}
+
+.three:hover{
+    background-color: white;
+    color: #5603ad;
+    border: 1px solid #5603ad;
+}
+
+.economy{
+    color: #f3a4b5;
+}
+
+.standard{
+    color: #fb6340
+}
+.oga{
+    color: #5603ad;
+}
+.card-btn-wrap{
+    margin: 30px;
+}
+
+.oga-day{
+    font-size: 18px;
+    text-align: justify;
+}
+
+.oga-body{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.food-img{
+    background: url('/img/food-banner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.major-text{
+    font-size: 40px;
+    color: rgb(247, 247, 247);
+}
+
+.text-two{
+    font-size: 14px;
+    color: rgb(211, 211, 211);
+    margin-top: 20px;
+}
+
+.suggest{
+    /* height: 20vh; */
+    padding: 50px;
+}
+
+.suggest-inner{
+    border-radius: 5px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.4);
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.suggest-text{
+    font-size: 30px;
+}
+
+.suggest-btn{
+    
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background: #8965e0;
+    color: white;
+    transition: 500ms;
+}
+
+.suggest-btn:hover{
+    border: 1px solid #8965e0;
+    color: #8965e0;
+    background: white;
+}
+
+.color-diff{
+    color:#5603ad
+}
+
+.center{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-wrapper{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.logos{
+    padding: 50px;
+}
+
+.logos h2{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 900;
+    color: #18006e;
+}
+
+.logo img{
+    width: 100%;
+}
