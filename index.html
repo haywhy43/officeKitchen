@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Office Kitchen</title>
-    <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,9 +14,9 @@
             <div class="landing-inner">
                 <div>
                     <p class="small-text">The best cuisine delivered to your workstation</p>
-                    <h1 class="text-bold highlighted">Welcome to Office Kitchen</h1>
+                    <h1 class="text-bold highlighted">Welcome to <span style="color: #f88f6e"> Office Kitchen</span></h1>
                     <div class="menu-link">
-                        <a href="#packages" class="menu-link-btn">SEE OUR PACKAGES</a>
+                        <a href="#form" onclick="showForm()" class="menu-link-btn">SIGN UP NOW</a>
                     </div>
                 </div>
             </div>
@@ -48,9 +48,9 @@
         
         <div>
             <div class="packages">
-            <div class="below-food" id="packages">
-                <p class="main">Check Out Our Packages</p>
-            </div>
+                <div class="below-food" id="packages">
+                    <p class="main">Check Out Our <span style="color: #fb6340">Packages</span></p>
+                </div>
             
                 <div class="package-wrapper">
                     <div class="card">
@@ -88,7 +88,7 @@
                             </div>
 
                             <div class="card-btn-wrap">
-                                <a href="#form" class="card-btn one">Sign Up</a>
+                                <a href="#form" onclick="showForm()" class="card-btn one">Sign Up</a>
                             </div>
                         </div>
                     </div>
@@ -127,7 +127,7 @@
                             </div>
 
                             <div class="card-btn-wrap">
-                                <a href="#form" class="card-btn three">Sign Up</a>
+                                <a href="#form" onclick="showForm()"  class="card-btn three">Sign Up</a>
                             </div>
                         </div>
                     </div>
@@ -150,7 +150,7 @@
                             </div>
 
                             <div class="card-btn-wrap">
-                                <a href="#form" class="card-btn two">Sign Up</a>
+                                <a href="#form" onclick="showForm()"  class="card-btn two">Sign Up</a>
                             </div>
                         </div>
                     </div>
@@ -167,7 +167,7 @@
             <p> </p>
         </div>
         <div class="logos">
-            <h2>Powering the engines of these innovators</h2>
+            <h2>Powering the engines of these <span style="color:#f3a4b5">innovators</span></h2>
             <div class="logo-wrapper">
                 <div>
                     <img src="img/logo1.svg" alt="">

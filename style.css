@@ -4,7 +4,7 @@ html{
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Lora', serif;
+    font-family: 'Roboto', sans-serif;
 }
 h1,h2,h3,h4,h5,h6,p{
     padding: 0;
@@ -31,7 +31,7 @@ a{
 }
 .highlighted{
     font-size: 64px;
-    color: white;
+    color:  rgb(212, 212, 212);;
     margin-top: 10px;
 }
 
@@ -48,6 +48,7 @@ a{
     color: #ecdbdb;
     transition: 500ms;
     font-weight:bold;
+    font-size: 20px;
     /* font-size: 20px; */
 }
 
@@ -57,7 +58,7 @@ a{
 }
 
 .menu-link{
-    margin-top: 70px;
+    margin-top: 80px;
 }
 
 .food-slide{
@@ -275,7 +276,7 @@ a{
 }
 .two:hover{
     background: white;
-    color: #2bffc6;
+    color: #fb6340;
     border: 1px solid #fb6340;
 }
 .three{
@@ -328,12 +329,13 @@ a{
 }
 
 .major-text{
-    font-size: 40px;
+    font-size: 52px;
     color: rgb(247, 247, 247);
+    text-align: center;
 }
 
 .text-two{
-    font-size: 14px;
+    font-size: 24px;
     color: rgb(211, 211, 211);
     margin-top: 20px;
 }
@@ -392,7 +394,8 @@ a{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .logos{
@@ -403,7 +406,7 @@ a{
     font-size: 40px;
     text-align: center;
     font-weight: 900;
-    color: #18006e;
+    color: black;
 }
 
 .logo img{
