@@ -13,7 +13,7 @@
         <div class="landing">
             <div class="landing-inner">
                 <div>
-                    <p class="small-text">We offer the best deals</p>
+                    <p class="small-text">The best cuisine delivered to your workstation</p>
                     <h1 class="text-bold highlighted">Welcome to Office Kitchen</h1>
                     <div class="menu-link">
                         <a href="#packages" class="menu-link-btn">SEE OUR PACKAGES</a>
@@ -25,15 +25,17 @@
             <div class="food-slide">
                 <div class="food-card">
                     <img src="img/food1.png" alt="jollof, plantain and chicken in a plate">
-                </div>
-
-                <div class="food-card">
-                    <img src="img/food2.png" alt="jollof, plantain and chicken in a plate">
-
+                    <p>Recharge Your workspace</p>
                 </div>
 
                 <div class="food-card">
                     <img src="img/food3.png" alt="jollof, plantain and chicken in a plate">
+                    <p>Avoid Downtime from lunch logistics</p>
+                </div>
+
+                <div class="food-card">
+                    <img src="img/food2.png" alt="jollof, plantain and chicken in a plate">
+                    <p>Improve Employee Satisfaction</p>
                 </div>
             </div>
 
@@ -48,7 +50,6 @@
             <div class="packages">
             <div class="below-food" id="packages">
                 <p class="main">Check Out Our Packages</p>
-                <p class="sub">Improve Employee Satisfaction</p>
             </div>
             
                 <div class="package-wrapper">
@@ -192,17 +193,30 @@
                 
             </div> 
         </div>
-        <div class="suggest">
-            <div class="suggest-inner">
-                <p class="suggest-text">Want to <span class="color-diff">Suggest a Meal?</span> </p>
-                <a href="mailto:officekitchenng@gmail.com" class="suggest-btn"> Click here</a>
+        <footer>
+            <div class="footer-mine">
+                <div class="footer-left">
+                    <p class="try">Try Office Kitchen Now.</p>
+                    <p class="sign">Sign Up your company to get started</p>
+                </div>
+                <div>
+                    <a href="#form" onclick="showForm()" class="footer-link-btn"> Sign Up Now</a>
+                </div>
             </div>
-        </div>
-
+            <p class="copyright">&copy;2019 <span style="color: #c5adff">OfficeKitchen</span></p>
+        </footer>
         <div class="center" id="form">
-                <script>(function(t,e,s,n){var o,a,c;t.SMCX=t.SMCX||[],e.getElementById(n)||(o=e.getElementsByTagName(s),a=o[o.length-1],c=e.createElement(s),c.type="text/javascript",c.async=!0,c.id=n,c.src=["https:"===location.protocol?"https://":"http://","widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgd4lm3d5mGgPj6pu_2FPIjSbLqPvdvpkdLjjFm_2FsIA8a18u.js"].join(""),a.parentNode.insertBefore(c,a))})(window,document,"script","smcx-sdk");</script>
+            <script>(function(t,e,s,n){var o,a,c;t.SMCX=t.SMCX||[],e.getElementById(n)||(o=e.getElementsByTagName(s),a=o[o.length-1],c=e.createElement(s),c.type="text/javascript",c.async=!0,c.id=n,c.src=["https:"===location.protocol?"https://":"http://","widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgd4lm3d5mGgPj6pu_2FPIjSbLqPvdvpkdLjjFm_2FsIA8a18u.js"].join(""),a.parentNode.insertBefore(c,a))})(window,document,"script","smcx-sdk");</script>
         </div>
         
     </main>
+
+    <script>
+        const showForm = () => {
+            var form = document.getElementById('form')
+
+            form.style.display = 'flex'
+        }
+    </script>
 </body>
 </html>

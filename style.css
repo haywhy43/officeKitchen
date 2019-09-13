@@ -41,12 +41,14 @@ a{
 }
 
 .menu-link-btn{
-    border: 1px solid #facecd;
+    border: 2px solid #facecd;
     border-radius: 5px;
     padding: 10px 20px;
     align-self: flex-end;
     color: #ecdbdb;
-    transition: 500ms
+    transition: 500ms;
+    font-weight:bold;
+    /* font-size: 20px; */
 }
 
 .menu-link-btn:hover{
@@ -81,6 +83,16 @@ a{
 .food-card{
     width: 100%;
     text-align: center;
+    margin-bottom: 150px;
+}
+
+.food-card p{
+    position: relative;
+    margin-top: -135px;
+    font-size: 20px;
+    color: rgb(248, 239, 239);
+    /* padding-top: 100px; */
+    opacity: 0.3
 }
 
 .food-card img{
@@ -91,7 +103,7 @@ a{
 }
 
 .food-card img:hover{
-    filter: brightness(0.5);
+    filter: brightness(0.2);
     cursor: pointer
 }
 
@@ -369,14 +381,15 @@ a{
 
 .center{
     margin-top: 50px;
-    display: flex;
+    display: none;
     justify-content: center;
+    height: 90vh
 }
 
 .logo-wrapper{
     display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    grid-gap: 25px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     align-items: center;
     justify-items: center;
@@ -395,4 +408,52 @@ a{
 
 .logo img{
     width: 100%;
+}
+
+footer{
+    /* width: 100vw; */
+    
+    background: linear-gradient(153.65deg, #8965E0 18.8%, rgba(137, 101, 224, 0.39) 54.87%, rgba(19, 43, 255, 0.74) 54.88%, rgba(137, 101, 224, 0) 54.88%);
+    padding: 70px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    /* height:20vh */
+}
+
+.footer-mine{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 100%; */
+    padding-bottom: 30px;
+}
+
+.footer-link-btn{
+    font-size: 16px;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: #8965e0;
+    transition: 500ms;
+}
+
+.footer-link-btn:hover{
+    color: #8965e0;
+    background: transparent;
+    cursor: pointer;
+    border: 1px solid #8965e0
+}
+
+.try{
+    color: #5603ad
+}
+
+.sign{
+    font-size: 30px;
+    color: #18006e
+}
+
+.copyright{
+    font-size: 12px;
 }
