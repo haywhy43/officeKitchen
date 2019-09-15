@@ -205,7 +205,7 @@ a{
     margin: 30px;
     border: 1px solid #EAEAEA;
     border-radius: 10px;
-    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.25);
+    box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.1);
     /* background-color: #fff0f0; */
     width: 60%;
 }
@@ -332,12 +332,18 @@ a{
     font-size: 52px;
     color: rgb(247, 247, 247);
     text-align: center;
+    font-family: 'Indie Flower', cursive;
 }
 
 .text-two{
     font-size: 24px;
     color: rgb(211, 211, 211);
     margin-top: 20px;
+    font-family: 'Indie Flower', cursive;
+}
+
+.diff-font{
+    font-family: 'Roboto Slab', serif;
 }
 
 .suggest{
@@ -389,13 +395,15 @@ a{
 }
 
 .logo-wrapper{
-    display: grid;
-    grid-gap: 25px;
+    display: flex;
+    /* grid-gap: 25px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     align-items: center;
+    justify-content: center; */
+    flex-wrap: wrap;
     justify-content: center;
-    text-align: center;
+    align-items: center;
 }
 
 .logos{
@@ -409,10 +417,14 @@ a{
     color: black;
 }
 
-.logo img{
+.logos img{
     width: 100%;
+    padding: 20px;
 }
 
+.logo-wrapper div{
+    padding:  0 40px;
+}
 footer{
     /* width: 100vw; */
     
@@ -433,7 +445,7 @@ footer{
 }
 
 .footer-link-btn{
-    font-size: 16px;
+    font-size: 20px;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -449,14 +461,15 @@ footer{
 }
 
 .try{
-    color: #5603ad
+    color: #5603ad;
+    font-size: 20px;
 }
 
 .sign{
-    font-size: 30px;
+    font-size: 35px;
     color: #18006e
 }
 
 .copyright{
-    font-size: 12px;
+    font-size: 14px;
 }
